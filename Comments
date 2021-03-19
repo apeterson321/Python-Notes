@@ -1,0 +1,19 @@
+# # this is what a Comment looks like
+# it's defined as lines of text that do not run as code and can be created with a # mark or command / 
+
+'''
+comments can also
+be created with
+triple quotes and 
+can cover multiple lines
+'''
+
+# some_string = """
+# can also be used
+# this format, can save the text
+# as sring
+# """
+
+# print(some_string)
+
+# comments are also great for making TODO: notes (saying I'll come back and do this thing later)
