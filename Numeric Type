@@ -1,0 +1,7 @@
+# Numeric Types are functions that describe the class of a numeric input
+# Example:
+print(type(4))
+print(type(33.67))
+print(type(True))
+print(type(False))
+# The results are Integer, Float, Boolean, Boolean
