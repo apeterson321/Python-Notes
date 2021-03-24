@@ -1,0 +1,6 @@
+# Order of Operations
+# PEMDAS
+# Python will do PEMDAS for you
+print(11+3*4-6/3**2)
+# though it may be better to use parentheses to keep your logic in order or to specify certain operators to calculate before others
+print(11+(3*4)-(6/(3**2)))
