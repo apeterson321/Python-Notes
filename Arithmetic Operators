@@ -1,0 +1,21 @@
+# Common Arithmetic Operators
+# +, -, *, /
+'''example'''
+print(7*3)
+print(10/2)
+print(1+1)
+# notice how when dividing, you get a float numeric type
+# the outcome of the function will adopt the more compelex numeric type
+'''example'''
+print(10.0+1)
+# other Arithmetic Operators
+# //, **, %
+# the // divides and rounds down to nearest integer
+print(11//2)
+# the ** is for exponentials
+print(2**3)
+# the % gives you the remainder of numbers divided
+# useful to figure out if something is odd or even
+print(11%2) #2 goes into 11 5 times with a remainder of 1
+# the == checks if a statement is true or false
+print(11%2 == 1) #does the remainder of 11/2 equal 1? true
