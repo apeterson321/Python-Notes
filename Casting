@@ -1,0 +1,18 @@
+#  Casting
+# taking one data type and turning it into another data type
+  # think of casting a person to perform as a different character in a movie
+  # transforming the data type
+print(25) #this is an integer
+print(float(25)) #converts to a float
+print(type(float(25))) #confirms type as float
+
+print(18.63) #this is a float
+print(int(18.6)) #converts to an integer (removes decimals)
+print(type(int(18.63))) #confirms type as integer
+
+#can also convert to a boolean Value
+# has value = true; no value = false
+print(bool(21))
+print(type(bool(21)))
+print(bool(0))
+print(type(bool(0)))
