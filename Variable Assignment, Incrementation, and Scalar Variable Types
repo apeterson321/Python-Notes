@@ -1,0 +1,33 @@
+# Simple Variable Assignment
+
+x = 'some string'
+print(x)
+print(type(x))
+
+y = 7
+print(y)
+print(type(y))
+
+# Simple Incrementation
+
+x = 10 #we assign 10 to x
+x*=3 #reassignment saying new value of x is x*3
+# can also be said that we incremented this variable by times 3
+print(x)
+
+y = 20
+y = y % 8 #the syntax above can also be implemented like this; however, it's more common to see the above format
+print(y)
+
+# When Scalar Type Variables Change
+
+x = 10
+print(id(10)) #the number generated is the ID of x
+x += 3 #we're changing the value of x so the ID of new x changes
+print(id(x))
+
+x = 11
+y = 11
+print('x: ',id(x))
+print('y: ',id(y))
+# since both x and y have the same value, the ID associated with the values are the same
