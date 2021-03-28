@@ -1,0 +1,27 @@
+# Simple Fuctions
+
+def simple_func():
+  return 5 * 3
+x = simple_func()
+print(x)
+print(type(x))
+# here we've created a function that when called upon returns the product of 5 * 3
+print( )
+
+# this function requires an input from the console to return a product
+def simple_func():
+  x = int(input('Type a number to multiplied: '))
+  y = int(input('Type another number to multiplied: '))
+  return f'{x} times {y} equals:', x * y
+z = simple_func()
+print(z)
+print( )
+
+# this function includes variables inate to the function and defines the variables within the
+def simple_func(x, y):
+  return x * y
+x = int(input('Choose a number to be multiplied: '))
+y = int(input('Choose another number: '))
+print(f'{x} x {y} = ', simple_func(x, y))
+
+# Print and Return are fundamentally different. If Return is not defined in a function, or is replaced by Print, the function will result in None.
