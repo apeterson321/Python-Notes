@@ -1,0 +1,23 @@
+# Print() and Input()
+
+x = 'this is printing to console'
+print(x) #a function that sends an output to the console
+print( )
+
+x = 'using an f string'
+print(f'this is {x}') 
+#this type of string can plug a variable into a string within the brackets {}
+print( )
+
+x = input ('gimme a number: ')
+# a function that recieves input from the console
+print( )
+print(f'your number is {x}')
+print(type(x)) #the default of inputs are strings
+print( )
+
+x = int(input('gimmie another number: ')) 
+#this recastes the input as an integer
+print( )
+print(f'your new number is {x}')
+print(type(x))
