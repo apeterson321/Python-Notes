@@ -1,0 +1,28 @@
+'''
+* Understand the concept of mutability and how it relates to variables.
+* Describe how variables are stored in Python
+'''
+
+# Let's look at the ID of the value 4.0
+x = 4.0
+print(type(x))
+print(id(x))
+print()
+
+# Cast x to an integer, notice how its ID changes
+x = int(x)
+print(type(x))
+print(id(x))
+
+# Let's throw in some more 'representations' of the integer value 4
+a = int(16**0.5) # square root of 16, casted to the int type
+b = 8//2 # integer division
+c = 1 + 1 + 1 + 1
+d = 2**2 # 2 squared
+
+# Look at the ID! All four variables--a, b, c, and d--all point to the same ID
+print(id(a))
+print(id(b))
+print(id(c))
+print(id(d))
+print()
