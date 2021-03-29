@@ -1,0 +1,14 @@
+# Identifying Variable Type
+
+x = 7
+y = 7.0
+z = 7 == 3
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+# this function tests whether an object is a certain variable type; results in either true or false
+print(isinstance(x, float))
+
+print(type(x) == float) #accomplishes the same as above
