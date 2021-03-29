@@ -1,0 +1,17 @@
+# Assigning Variables
+
+# Below are some use cases for proper syntax in Python variable assignment
+x = 1
+print(x)
+
+x, y = 1, 2
+print(x)
+print(y)
+
+x = (1, 2, 3)
+a, b, c = x
+print(a, b, c)
+
+# for multiple variables to equal the same value
+x = y = z = 0
+print(x, y, z)
