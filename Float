@@ -1,0 +1,36 @@
+'''Float Scalar Type 
+
+- Floats are simply decimal number.
+- Can be converted to a float with float()
+- The python language can store decimal places only so far, so if you want to check if 2 numbers with a lot of decimal places are true, then you'll need to test the parameters.
+'''
+
+# tests to see if numbers are true or false based on a set of parameters
+def equal_enough(float1, float2, difference):
+    if abs(float1 - float2) < difference:
+        return True
+    else:
+        return False
+
+print(equal_enough(3.00001, 3.00, .01))
+print(equal_enough(7.2, 7.1, .01))
+print( )
+
+def mult_x_and_y():
+    # get some input from a user
+    x = input('Input a value for x: ')
+
+    print(f'{x} is of type {type(x)}')
+
+    # convert that value to a float
+    print('\nconverting x')
+
+    x = float(x)
+    print(f'{x} is now of type {type(x)}')
+
+    # take in a second value and multiply the two
+    y = input('\nInput a value for y: ')
+    y = float(y)
+    return f'{x} x {y} = {x*y}'
+
+print(mult_x_and_y())
