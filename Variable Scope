@@ -1,0 +1,57 @@
+'''
+* Understand the difference between global and local variables
+* Change the value of a global variable from within a function
+
+KEY LESSON: Variables within functions can only be accessed from within that function
+  - However, variables that exist outside of functions can be called into it.
+'''
+
+
+def add_2(x):
+    return x+2
+
+
+# this is fine
+add_2(1)
+
+# but this will throw an error!
+# Comment the print(x) statement out (prepend with #)
+# print(x)
+
+
+
+# this should work
+x=2
+def add_2():
+    return x+2
+
+print(add_2())
+
+
+
+# investigate what this returns
+x = 2
+def add_n(n):
+    x = 5
+    x+=n
+    return x
+
+print(x)
+print(add_n(4))
+
+
+# change the value of a global variable
+x = 2
+def add_n(n):
+    global x
+    x+=n
+    return x
+
+
+print(add_n(2))
+print(x)
+
+'''
+Galvanize Data Science Prep
+https://www.galvanize.com/data-science/prep
+'''
