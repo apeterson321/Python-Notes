@@ -1,0 +1,8 @@
+# The word parameter refers to the variables of a function. 
+  # These Operate just like variables though their lifetime is only the duration of that function's execution.
+# The word argument refers to when a specific value is assigned to a function's parameter. 
+def is_pythag(a, b, c):
+    return a**2 + b**2 == c**2
+# name of function = is_pythag 
+# a, b, c = parameters of function
+is_pythag(3, 4, 5) #arguments = 3, 4, 5
