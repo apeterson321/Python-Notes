@@ -4,6 +4,7 @@
 
 KEY LESSON: Variables within functions can only be accessed from within that function
   - However, variables that exist outside of functions can be called into it.
+  - Scope is global vs local (within the function)
 '''
 
 
@@ -26,32 +27,16 @@ def add_2():
     return x+2
 
 print(add_2())
+print( )
 
-
-
-# investigate what this returns
+# using the global function, you can call a global variable into the local function
+# generally try to avoid this since it can cause a lot of mess
 x = 2
+
 def add_n(n):
-    x = 5
-    x+=n
+    global x # telling the add_n function to look for `x` in the global scope
+    x += n
     return x
-
-print(x)
-print(add_n(4))
-
-
-# change the value of a global variable
-x = 2
-def add_n(n):
-    global x
-    x+=n
-    return x
-
 
 print(add_n(2))
 print(x)
-
-'''
-Galvanize Data Science Prep
-https://www.galvanize.com/data-science/prep
-'''
