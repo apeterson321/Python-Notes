@@ -1,0 +1,21 @@
+'''String Scalr Type'''
+
+# The second print is the concatenation of strings
+string1 = "Suck on"
+string2 = "these nuts"
+print(f"{string1} {string2}")
+print(string1 + ' ' + string2)
+
+some_str = 'Hi, I am a string'
+
+print(type(some_str))
+print(len(some_str)) #This method gives the length of a string
+print(some_str)
+
+# This function gives an example of casting ints as strings, calling them and recasting them as a string in a different order
+def create_three_digit_num(n, m, p): 
+    p = str(p)
+    m = str(m)
+    n = str(n)
+    return int(p + m + n)
+print(create_three_digit_num(4, 5, 6))
