@@ -14,8 +14,5 @@ print(some_str)
 
 # This function gives an example of casting ints as strings, calling them and recasting them as a string in a different order
 def create_three_digit_num(n, m, p): 
-    p = str(p)
-    m = str(m)
-    n = str(n)
-    return int(p + m + n)
+    return int(str(p) + str(m) + str(n))
 print(create_three_digit_num(4, 5, 6))
