@@ -1,0 +1,17 @@
+'''Floor Division'''
+
+# Floor division is the mathemtaical operator for dividing 2 numbers and rounding the quotient down to the nearest whole number
+print(8//3)
+print(8.0//3) #the data type of the result will default to a float if on of the numbers is a float
+print(4//5)
+print(4.3//5.1)
+print( )
+
+# Same can be applied for negative numbers; HOWEVER, floor division always rounds down to the nearest whole number, so the following results are -1 and -2
+print(-2//5)
+print(-4//3)
+print( )
+
+# The type() function will round UP to the nearest whole number while floor division rounds down; notice the difference below:
+print(-2//5)
+print(int(-2/5))
