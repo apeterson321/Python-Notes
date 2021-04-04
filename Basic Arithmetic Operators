@@ -1,0 +1,22 @@
+'''Arithmetic Operators'''
+
+# + and -: These operators are used for addition and subtraction
+# * and /: These are the multiplication and division operators
+# **: Used to perform exponentiation
+print(33+51)
+print(5.5-3.2)
+print(4*6)
+print(50.5/7)
+print(2**3)
+print( )
+
+# These operators can work on booleans because python will evaluate True as 1 and False as 0
+print(True + False)
+print(False / True)
+print(True ** False)
+print( )
+
+# Boolean, float, and integer values can be mixed when using operators
+print(True + 3)
+print(5 * 1.5)
+print( )
