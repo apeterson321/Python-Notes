@@ -1,0 +1,19 @@
+"""If Statements"""
+
+# if statements allow you to run code conditionally
+# if statement include some condition, generally with a comparison operator (>, <, ==, etc.) that generates a True or False statement
+  # if statement is true, the code will run; if false, the code will not run
+
+some_var = 5
+
+# checks if some_var is less than the integer 10
+if some_var < 10:
+    print("some_var is less than 10")
+
+# checks if some_var is equal to the integer 5
+if some_var == 5:
+    print("some_var is equal to 5")
+
+# checks if the integer 3 is greater than some_var
+if 3 > some_var:
+    print("3 is greater than some_var")
