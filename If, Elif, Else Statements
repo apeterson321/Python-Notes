@@ -1,0 +1,57 @@
+"""If, Elif, and Else"""
+
+
+# Basic If Elif Else Structure
+num = int(input('Enter a number: '))
+
+if num == 10:
+    print("`num == 10` resolves to `True`")
+# the condition in this elif is only considered when the prior condition is `False`
+elif num > 20 and num < 50:
+    print("`num > 20 and num < 50` resolves to `True`")
+# this next condition is only considered when all prior conditions resolve to `False`
+elif num == 60: 
+    print("`num == 60` resolves to `True`")
+# in ALL other circumstances
+else:
+    print("all of the prior conditions resolved to `False`")
+
+
+# Menu Example
+menu_choice = input('Choose a food item: Burrito: (b), Pizza: (p), Sandwich: (s): ')
+
+if menu_choice == 'b':
+    menu_choice = input('Choose what kind of Burrito you\'d like: Bean and cheese: (a), Breakfast: (b)')
+    if menu_choice == 'a': print('You\'ll get a Bean and cheese Burrito')
+    elif menu_choice == 'b': print('You\'ll get a Breakfast Burrito')
+    else: print('We don\'t have that, sorry we\'re a crappy restaurant')
+
+elif menu_choice == 'p':
+    menu_choice = input('Choose what kind of Pizza you\'d like: Cheese: (a), Pepperoni: (b)')
+    if menu_choice == 'a': print('You\'ll get a Cheese Pizza')
+    elif menu_choice == 'b': print('You\'ll get a Pepperoni Pizza')
+    else: print('We don\'t have that, sorry we\'re a crappy restaurant')
+
+elif menu_choice == 's':
+    menu_choice = input('Choose what kind of Sandwich you\'d like: Ham: (a), PB&J: (b)')
+    if menu_choice == 'a': print('You\'ll get a Ham Sandwich')
+    elif menu_choice == 'b': print('You\'ll get a PB&J Sandwich')
+    else: print('We don\'t have that, sorry we\'re a crappy restaurant')
+
+else: print('We don\'t have that, sorry we\'re a crappy restaurant')
+
+
+
+def is_divisible_by (num, divisor1, divisor2):
+  if num % divisor1 == 0 and num % divisor2 == 0:
+    return 'This number is divisible by <divisor1> and <divisor2>.'
+  elif num % divisor1 == 0:
+    return 'This number is divisible by <divisor1>.'
+  elif num % divisor2 == 0:
+    return 'This number is divisible by <divisor2>.'
+  else: 
+    return 'This number is not divisible by either <divisor1> or <divisor2>.'
+
+print(is_divisible_by (8, 5, 2))
+
+print(type(3))
