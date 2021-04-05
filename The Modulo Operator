@@ -1,0 +1,13 @@
+'''The Modulo Operator'''
+
+# The Modulo Operator returns the integer remainder after division. Can be written as A ModuleNotFoundError
+print(5%3)
+print(2%2)
+print(7%3.0)
+print()
+
+
+# There are n possible remainders when dividing by n, as demonstrated in the example below. Play around with the values of n.
+n = 5
+for i in range(25):
+    print(i % n)
