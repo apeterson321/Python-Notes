@@ -1,0 +1,39 @@
+"""Logical Operators"""
+
+
+'''Comparision Operators'''
+
+# < and > : less than and greater than
+# <= and >= : less than or equal to; greater than or  equal type 
+# == : equality operator (is a = b ?)
+# != : inequality operator (is a not = to b?)
+# the result of all these comparison operators is either True or Flase
+print(8 > 3 and 7 < 2)
+print(1 == 1 and 3 >= 2)
+print( )
+
+'''Logical Operators'''
+
+# and : statements on both sides of and need to be true for the whole statement to be True
+print(5 == 5 and 6 > 4) #True
+print(7 >= 5 and 5 != 5) #False
+print( )
+
+# or : only one of two statements on wither side must be true for the whole statement to be true
+print(5 == 6 or 9 <= 9) #True
+print(5 != 5 or 8 > 9) #False 
+print( )
+
+# not : negates what comes after it 
+learning = True
+print(not learning)
+print( )
+
+'''Bitwise Operators'''
+
+# &: Bitwise and
+print(5 == 5 & 6 > 4)
+# |: Bitwise or
+print(5 == 6 | 9 <= 9)
+# ~: Bitwise not
+print(~ learning)
