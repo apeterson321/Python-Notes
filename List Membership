@@ -1,0 +1,29 @@
+'''List Membership'''
+
+# The in keyword can by used to check whether a specific object or element is in a list
+  # The result returns a boolean value
+
+operating_systems = ['Windows', 'Linux', 'MacOS', 'Android']
+
+# Prints True
+OS_is_present = 'Linux' in operating_systems
+print(OS_is_present)
+
+# Prints False
+OS_is_present = 'FreeBSD' in operating_systems
+print(OS_is_present)
+print( )
+
+# The not in combination works, as you woud imagine, in the exact opposite way that in works; if an element is not in a list then <element> not in <list_name> will return True
+recipe_contents = ['Sugar', 'Flour', 'Eggs', 'Butter']
+
+# Prints True (meaning element is NOT in list)
+ingredient_not_present = 'Chocolate Chips' not in recipe_contents
+print(ingredient_not_present)
+
+# Prints False (meaning element IS in list)
+ingredient_not_present = 'Eggs' not in recipe_contents
+print(ingredient_not_present)
+
+print('Chocolate Chips' not in recipe_contents)
+# can also access the entire code rather then the variable it's assigned to
