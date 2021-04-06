@@ -1,0 +1,46 @@
+'''Declaring Lists'''
+
+# Ways to creat an empty list
+some_list = [] # This is most common
+another_list = list() # This works too
+
+# Creating Preloaded Lists
+list_of_nums = [3, 2, 9, 18, 34]
+print(list_of_nums)
+
+list_of_mixed_types = [True, 14, 'cat', [76, 33.3]]
+print(list_of_mixed_types)
+
+# You can also concatenate lists together
+first_list = ['This', 'is', 'list', '1']
+second_list = ['add', 'me', 'to', 'list', '1']
+
+concatenated_list = first_list + second_list
+
+# This will print ['This', 'is', 'list', '1', 'add', 'me', 'to', 'list', '1']
+print(concatenated_list)
+
+# Can create repeated lists with the * operator
+# An alternative to cat_list = ['cat'] + ['cat'] + ['cat']
+cat_list = ['cat'] * 3
+
+# Prints "['cat', 'cat', 'cat']"
+print(cat_list)
+
+# Lists are a different scalar type than bool, str, int, float
+scalar_string = 'I am not a series of expressions, I am string. This means I am a sequence of characters.'
+
+list_example_4 = ['lists', 'can', 'contain', 'numbers', 'like', 10]
+
+list_example_5 = ['they', 'can', 'also', 'contain', ['other', 'lists', 'like', 'this', 'one'], 'in', 'addition', 'to', 'numbers', 'such', 'as', 2, 3, 4]
+
+# How to tell if something is a list:
+
+print(type(scalar_string))
+print(type(list_example_4))
+print(type(list_example_4))
+
+
+
+
+
