@@ -1,0 +1,61 @@
+'''Accessing List Values'''
+
+some_list = list(range(1,11))
+print(some_list)
+
+# Zero based indexing --> the first element in a list is at index 0, the second element is at index 1, the third at index 2, etc.
+some_list[0] #to access the first element in the list.
+some_list[1] #to access the second element in the list.
+some_list[2] #to access the third element in the list.
+ 
+print(some_list[0])
+print(some_list[5])
+print(some_list[9])
+print( )
+
+# You can also index some list using negative numbers to find values from back of the list
+some_list[-1] #to access the last value of a list.
+some_list[-2] #to access the second to last value of a list.
+print(some_list)
+print(some_list[-1])
+print(some_list[-2])
+print( )
+
+'''Modifying Some List'''
+
+# a list typed object is mutable. This means that the objects within a list can be modified, rearranged, or even deleted
+other_list = [1,2,3,4,5]
+
+other_list[0] = 'dolphin' #this changes the first value 0 to the string 'dolphin'
+
+print(other_list)
+
+other_list[-1] = 'pussy lips'
+
+print(other_list)
+print( )
+
+# You can also use the del bulitin to delete a value in a list
+my_list = list(range(1,6))
+print(my_list)
+
+del my_list[2] #this will delete the third value 3 from the list
+
+print(my_list)
+print( )
+
+
+'''List Unpacking '''
+
+# A list with three cat breeds
+cat_list = ['bengal', 'siamese', 'sphinx']
+
+# Unpacking the list into three new variables (cat1, cat2 and cat3),
+# which is equal to the number of elements within cat_list
+cat1, cat2, cat3 = cat_list
+
+# can also be written as
+cat1, cat2, cat3 = cat_list[0], cat_list[1], cat_list[2]
+
+print(f'{cat1} {cat2} {cat3}')
+print(cat1)
