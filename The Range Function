@@ -1,0 +1,25 @@
+'''Range Function'''
+
+start = 0 #an integer number specifying at which position to start. Default is 0. Inclusive
+stop = 10 #an integer number specifying at which position to end. Non-inclusive.
+step = 2 #an integer number specifying the incrementation. Default is 1.
+
+# Prints the numbers 0, 2, 4, 6, 8 each on a new line
+for num in range(start, stop, step):
+    print(num)
+
+# If only one number is in the range function, it         defaults to the stop position
+  # If two numbers are in the range function, defaults to the start and stop positions
+
+# Creates a list from 3 to 9, incrementing by 1
+list_1 = list(range(3, 10))
+
+# Prints a list from 3 to 9, incrementing by 1
+print(list_1)
+
+# Can also create a list of negative numbers
+list_3 = list(range(-10, 0))
+print(list_3)
+
+list_4 = list(range(-100, 101, 10))
+print(list_4)
