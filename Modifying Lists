@@ -1,0 +1,38 @@
+'''Mutability and Modifying'''
+
+# Create a list
+some_list = [1, 2, 3, 4, 5]
+
+# Show the list and the id()
+print(some_list)
+print(id(some_list))
+
+# Modify the list
+some_list[1] = 'hot dog'
+some_list[2] = ['dog', 'cat', None]
+
+# Verify that the list has changed but the id() has not
+print(some_list)
+print(id(some_list))
+print( ) #the ID of a list as an object is tied to the list itself and is not determined by the contents of that list
+
+# Create two identical lists
+list1 = [1, 2, 3, 4, 5]
+list2 = [1, 2, 3, 4, 5]
+
+# Show the id()s of list1
+print(list1)
+print(id(list1))
+# Show the id()s of list2
+print(list2)
+print(id(list2))
+print( )
+# notice how both of these lists have the same value but have 2 different IDs
+
+# changing the contents of a list does not change the ID of that list
+list3 = [1, 2, 3, 4, 5]
+print (list3)
+print(id(list3))
+list3[4] = "changed"
+print(list3)
+print(id(list3))
