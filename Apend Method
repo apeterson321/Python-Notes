@@ -1,5 +1,7 @@
 '''Append Method'''
 
+"""Syntax --> .append( )"""
+
 a = 10
 n = 20
 
