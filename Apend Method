@@ -1,0 +1,26 @@
+'''Append Method'''
+
+a = 10
+n = 20
+
+# generate a list within a specific range
+num_list = list(range(a, n))
+print(num_list)
+
+# athis .append method adds another element to the num_list
+num_list.append('duck')
+print(num_list)
+print( )
+
+# a function that takes input from a user to append a new item to a list
+some_list = ['dog', 'cat', 'bear']
+print(some_list)
+
+def append_input(a_list):
+    b_list = a_list[:]
+    b_list.append(input('Enter the new element you would like to append: '))
+    return b_list
+
+another_list = append_input(some_list)
+
+print(another_list)
