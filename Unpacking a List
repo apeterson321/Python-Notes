@@ -1,0 +1,26 @@
+'''Unpacking a List'''
+
+# Create a list
+some_list = ['man', 'bear', 'pig']
+
+# Unpack the list
+man, bear, pig = some_list
+
+'''
+The statement above is equivalent to:
+
+man = some_list[0]
+bear = some_list[1]
+pig = some_list[2]
+'''
+
+# Show that the variables represent the values of the original list
+print(man, bear, pig)
+print( )
+
+# define your function here
+def list_unpacker(list1):
+    num1, num2, num3, = list1
+    return num1, num2, num3 
+list1 = [1,2,3]
+print(list_unpacker(list1))
