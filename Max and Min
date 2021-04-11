@@ -1,0 +1,32 @@
+'''Max and Min'''
+
+# max() is the function we are calling, and will return the maximum value in <input_list>.
+numbers = [1, 3, 4, 6, 2]
+max_num = max(numbers)
+print(max_num)
+
+a = 30
+n = 90
+num_list = list(range(a, n))
+print('max:', max(num_list))
+print( )
+
+# min() is the function we are calling, and will return the minimum value in <input_list>.
+numbers = [3, 1, 4, 6, 2]
+min_num = min(numbers)
+print(min_num)
+
+a = 30
+n = 90
+num_list = list(range(a, n))
+print('min: ', min(num_list))
+print( )
+
+# Example:
+digit_lst = list(range(8,24))
+
+def diff_max_min(digit_lst):
+    max_val = max(digit_lst)
+    min_val = min(digit_lst)
+    return max_val - min_val 
+print ('difference: ', diff_max_min(digit_lst))
