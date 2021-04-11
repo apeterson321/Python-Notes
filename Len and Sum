@@ -1,0 +1,18 @@
+'''Len() and Sum()'''
+
+# len() will return the length of a list
+numbers = [1, 2, 3, 4, 5]
+print(len(numbers))
+print(len(list(range(10))))
+print( )
+
+# sum() will add up all the contents of the list, as long as the list only contains numeric types
+numbers = [1, 2, 3, 4, 5]
+print(sum(numbers))
+print( )
+
+a = 10
+n = 20
+num_list = list(range(a, n)) # not inclusive of n
+print(sum(num_list))
+print( )
