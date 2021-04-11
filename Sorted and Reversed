@@ -1,0 +1,28 @@
+'''Sorted() and Reversed()'''
+
+# sorted() will return a sorted version of a list
+str_list = ['z','l', 'j', 'q']
+newly_sorted = sorted(str_list)
+
+# newly sorted list
+print(newly_sorted)
+# original list, not affected
+print(str_list)
+print( )
+
+# If you want to sort a list in descending order, you can specify reverse = True
+numbers = [5, 7, 2, 19, 1]
+newly_sorted2 = sorted(numbers, reverse = True)
+print(newly_sorted2)
+print( )
+
+#  reversed() will return the a list with the elements in reversed order
+str_list = ['a', 'b', 'c', 'd']
+newly_reversed = reversed(str_list)
+
+# newly reversed iterable
+print(newly_reversed)
+# newly reversed iterable, made into a list
+print(list(newly_reversed))
+# original list, not affected
+print(str_list)
