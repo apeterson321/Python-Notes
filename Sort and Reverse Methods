@@ -1,0 +1,22 @@
+'''Sort and Reverse Methods'''
+
+# .sort() will sort some_list, in place, in ascending order. This performs the same activity as the sorted() function
+numbers = [3, 2, 1, 6, 4]
+numbers.sort()
+print(numbers)
+print( )
+
+# .reverse() will reverse the order of some_list, in place. This performs the same activity as the reversed() function
+numbers = [1, 2, 3, 4, 5]
+numbers.reverse()
+print(numbers)
+print( )
+
+'''Methods vs Functions'''
+
+# methods modify lists in place while functions do not
+nums_list = [9, 7, 8, 3, 5, 1, 2]
+sorted(nums_list)
+print(nums_list) # the list wasn't modified in place, so this will print the original list, since it wasn't modified
+nums_list.sort()
+print(nums_list)
