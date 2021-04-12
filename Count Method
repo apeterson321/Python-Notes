@@ -1,0 +1,21 @@
+'''Count Method'''
+
+# .count() method will search for <item_to_count> and return the number of times it occurs.
+yet_another = [7] * 5
+print(yet_another)
+print(yet_another.count(7)) #counts five 7's in the list
+print( )
+
+nums_list = [1, 5, 6, 7, 7, 3, 4, 1, 2]
+print(nums_list.count(7))
+print(nums_list.count(5))
+print(nums_list.count(nums_list[0])) #this finds the index 0 number (in this case 1) in the list and counts the occurences in the list
+
+def sample_proportion(obs_list, group1, group2, group3):
+    var1 = (obs_list.count(group1)) / (len(obs_list))
+    var2 = (obs_list.count(group2)) / (len(obs_list))
+    var3 = (obs_list.count(group3)) / (len(obs_list))
+    return [var1, var2, var3]
+
+example_lst = ['dog', 'cat', 'dog', 'fish']
+print(sample_proportion(example_lst, 'dog', 'cat', 'fish'))
