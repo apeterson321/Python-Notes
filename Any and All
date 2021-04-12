@@ -1,0 +1,22 @@
+'''Any() and All()'''
+
+# any() will return True if any values in <input_list> are truthy, and will return False otherwise
+numbers = [0, 1, 2, 3]
+are_any_truthy = any(numbers)
+print(are_any_truthy)
+print( )
+
+numbers = [0, False, 0, False]
+are_any_truthy = any(numbers)
+print(are_any_truthy)
+print( )
+
+# all() will return True if all values in <input_list> are truthy, and will return False otherwise.
+numbers = [1, 2, 3, 4]
+all_are_truthy = all(numbers)
+print(all_are_truthy)
+print( )
+
+numbers = [0, 1, 2, 3]
+some_are_truthy = all(numbers)
+print(some_are_truthy)
