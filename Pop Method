@@ -1,0 +1,15 @@
+'''Pop Method'''
+
+# .pop() will remove and return the last value from some_list
+numbers = [1, 2, 3, 4]
+removed_number = numbers.pop() #if the parameter is empty, the method will default to pop out the last element in the list
+print(numbers)
+print(removed_number)
+print( )
+
+a = 10
+n = 20
+num_list = list(range(a, n))
+print(num_list)
+print(num_list.pop()) #this shows the number that was popped out
+print(num_list) #the list now is missing the number that was popped out
