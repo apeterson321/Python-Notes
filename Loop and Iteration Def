@@ -1,0 +1,35 @@
+'''Iteration'''
+
+# Iteration is the process of going through each item in a list, or any other object, and repeatedly executing the same code
+
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+i = 0
+print(nums[i])
+i +=1
+print(nums[i])
+i +=1
+print(nums[i])
+i +=1
+print(nums[i])
+i +=1
+print(nums[i])
+i +=1
+print(nums[i])
+i +=1
+print(nums[i])
+i +=1
+print(nums[i])
+i +=1
+print(nums[i])
+i +=1
+print(nums[i])
+
+
+'''Loops'''
+
+# Loops are used to perform repeated operations. Repeated operations are often used to solve numeric problems. 
+
+# There are 2 types of loops:
+# - For Loop: when you know how many times you'll need to iterate through something
+# - While Loop: when the number of iterations needed to solve a problem is unknown
