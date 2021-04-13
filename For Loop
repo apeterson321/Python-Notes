@@ -1,0 +1,23 @@
+'''For Loops'''
+
+# for loops automatically go through each item in a list and perform operations in the indented block of code below the for statement, on each item, until there are no more items left in the list
+for i in range(1, 11):
+  print(i) #this for loop goes through numbers 1 through 10 (non-inclusive) and prints each number
+
+# The first line of the for loop tells Python to go through the specified integers and declare the variable i with each sequential integer in each iteration. The : is needed at the end of the for statement to declare the start of the indented block of code.
+
+'''The 4 Patterns of For Loops
+
+for i in range(low, high):
+    print(i)
+
+for i in range(len(lst)):
+    print(lst[i])
+
+for element in lst:
+    print(element)
+
+for i, element in enumerate(lst):
+    print(i)
+
+'''
