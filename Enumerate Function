@@ -1,0 +1,46 @@
+'''Enumerate Function'''
+
+# The enumerate() function iterates through the item and a variable "counter" that corresponds to that item.
+# This function is used to create the index of each element in a list
+
+my_lst = [6, 8, 9, 1, 2, 5]
+
+for idx, num in enumerate(my_lst): 
+    print(idx, num)
+print( )
+
+'''
+Syntax:
+
+for idx, val in enumerate(lst, 1):
+  print(idx, val)
+'''
+
+# The enumerate function actually takes a second, optional parameter which allows you to start the indexing at any value:
+
+my_lst = [6, 8, 9, 1, 2, 5]
+
+for idx, num in enumerate(my_lst, -62): #the index starts with number -62
+    print(idx, num)
+print( )
+
+'''Example'''
+# write function below
+def alt_series(num_list):
+  alt_sum = 0
+  pow_sum = 0
+  idx_sum = 0
+  
+  for idx, num in enumerate(num_list, 1):
+    if idx % 2 == 0:
+      alt_sum += num
+    else:
+      alt_sum -= num
+
+    pow_sum += num**idx
+    idx_sum += idx**num
+  return alt_sum, pow_sum, idx_sum
+  
+num_list = [5,8,7,6,3,9,8,50]
+
+print(alt_series(num_list))
