@@ -1,0 +1,14 @@
+'''Accumulators'''
+
+# ways to store values as they are iterated through a loop 
+
+sum_accum = 0   # this is the accumulator to accumulate the sum values
+list_ex = list(range(4,101,4))
+for idx, num in enumerate(list_ex):
+  temp = sum_accum
+  sum_accum += num
+  print(f'     {idx}: {temp} + {num} = {sum_accum}')
+
+print('     The final sum is = ', sum_accum)
+
+# this code takes a list of numbers and adds them together. The values are stored in the variable sum_accum (the accumulator)
