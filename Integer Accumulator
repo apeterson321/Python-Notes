@@ -1,0 +1,23 @@
+'''Integer Accumulator'''
+
+# integers can be accumulated into variables. Below is an example of accumulating the sum of values in a list
+num_list = [1, 2, 3, 4, 5]
+
+num_sum = 0
+for num in num_list:
+    num_sum += num
+
+print(num_sum)
+print( )
+
+'''Filtered Accumulator'''
+
+# we can also filter through a collection of data a filter it for certain type using the isinstance() function
+mixed_data = [1, 'a', 2, 'b', 3, 'c', 4, 'd', 5]
+
+num_sum = 0
+for val in mixed_data:
+    if isinstance(val, int):
+        num_sum = num_sum + val
+
+print(num_sum)
