@@ -1,0 +1,26 @@
+'''Boolean Flags'''
+
+# boolean can be used to indicate when to exit an iteration. We use a boolean "flag" to dictate when the code needs to stop running
+
+
+lst = [23, 42, 86, 92, 93, 94]
+
+has_value_over_90 = False
+for val in lst:
+    if val > 90:
+        has_value_over_90 = True
+        break
+# this code runs through the list and determines if the list contains a value greater than 90. If not, the code defaults to False
+# we use a boolean flag to stop looping through the code once the answer has been determined
+print(has_value_over_90)
+print( )
+
+# can also be useful in stopping loops that would otherwise continue for infinity
+done = False
+x = 1
+while not done:
+    x = 2 * x + 1
+    print(x)
+
+    if x > 100000:
+        done = True
