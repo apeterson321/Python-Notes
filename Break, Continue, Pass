@@ -1,0 +1,69 @@
+'''Break, Continue, Pass'''
+
+
+'''Break'''
+
+# the break command allows you to "break out" of a for or while loop that may run on for infinity otherwise
+
+# this for loop will exit after 50
+for num in range(50):
+    print(num)
+    if num == 25:
+        break
+
+# this for loop will exit once it's discovered that a number is prime
+def is_prime(n):
+    if n == 1:
+        return False
+    elif n == 2:
+        return True
+
+    prime = True
+    for i in range(2, n):
+        if n % i == 0:
+            prime = False
+            break
+    return prime
+print( )
+
+'''Continue'''
+
+# this command skips over any following lines of code and begins to reloop through the for / while loop 
+
+# this function takes the sum of any even numbers within a list and skips over the odd numbers
+def sum_only_evens(num_list):
+
+    sum_ = 0
+    for num in num_list:
+        if num % 2 == 0:
+          sum_ += num
+        if num % 2 == 1:
+          continue
+    return sum_
+
+num_list = [1,2,3,4,5,6,7,8,9]
+print(sum_only_evens(num_list))
+print( )
+
+'''Pass'''
+
+# this command passes over a function and does not execute any code within the function (it passes over the function)
+
+# none of these functions, nor the code within the functions, will execute
+def grow_up():
+    pass
+
+def get_enough_sleep():
+    pass
+
+def do_the_dishes():
+    pass
+
+for i in range(20):
+    # this will do nothing
+    pass
+
+if 'dog' == 'dog':
+    pass
+else:
+    print('this will never execute')
