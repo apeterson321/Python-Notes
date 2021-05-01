@@ -1,0 +1,26 @@
+'''Join and Split Methods'''
+
+
+'''Split'''
+# str.split() simply splits a string into a list of strings
+some_string = "I am a string!"
+some_string = some_string.split()
+print(some_string)
+print( )
+
+# takes 2 parameters:  
+  # sep parameter serves as the delimiter on which the string is to be split; defaults to any whitespace character such as " " or the newline character "\n"
+  # maxsplit parameter dictates how many times to split the string and defaults to -1 (no limit, i.e., splits the string at every occurrence of the delimiter)
+
+'''Join'''
+# str.join() method joins multiple strings together
+string_list = ["I", "used", "to", "be", "a", "string", "before", "I", "was", "split"]
+print(" ".join(string_list))
+print( )
+
+# The str.join() method is being called on the literal string " ". The calling object (the string object on which the str.join() method is called) here serves as the string with which to join the list of strings passed into the method as an argument.
+
+num_str_list = ["1", "2", "4", "8", "16", "32", "64", "128"]
+arrow = " --> "
+arrow_join = arrow.join(num_str_list)
+print(arrow_join)
